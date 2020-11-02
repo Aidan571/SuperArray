@@ -20,5 +20,11 @@ public class SuperArray{
     return false;
   }
 
+  public String get(int index){
+    if(index >= 0 && index <= (this.size() - 1)){
+      return data[index];
+    }
+    return "No value at the given index.";
+  }
 
 }
