@@ -7,5 +7,13 @@ public class SuperArrayTester{
     System.out.println(sa1.get(1));
     System.out.println(sa1.set(0,"Hey There"));
     System.out.println(sa1.get(0));
+    SuperArray words = new SuperArray();
+    words.add("kani");
+    words.add("uni");
+    words.add("ebi");
+    System.out.println(words.size());
+    for(int i = 0; i < words.size(); i++){
+      System.out.println( words.get(i) );
+    }
   }
 }
