@@ -5,5 +5,7 @@ public class SuperArrayTester{
     System.out.println(sa1.add("Hello"));
     System.out.println(sa1.get(0));
     System.out.println(sa1.get(1));
+    System.out.println(sa1.set(0,"Hey There"));
+    System.out.println(sa1.get(0));
   }
 }
