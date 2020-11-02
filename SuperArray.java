@@ -27,4 +27,12 @@ public class SuperArray{
     return "No value at the given index.";
   }
 
+  public String set(int index, String element){
+    if(index >= 0 && index <= (this.size() - 1)){
+      String holder = this.get(index);
+      data[index] = element;
+      return holder;
+    }
+    return "No value at the given index.";
+  }
 }
