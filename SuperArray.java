@@ -92,5 +92,16 @@ public class SuperArray{
     data[index] = element;
   }
 
-
+  public String remove(int index){
+    String holder = data[size - 1];
+    String holder2;
+    String returnValue = data[index];
+    for(int i = size - 1; i > index; i--){
+      holder2 = this.get(i - 1);
+      data[i - 1] = holder;
+      holder = holder2;
+    }
+    size -= 1;
+    return returnValue;
+  }
 }
