@@ -75,5 +75,8 @@ public class SuperArray{
     return false;
   }
 
-
+  public SuperArray(int initialCapacity){
+    size = 0;
+    data = new String[initialCapacity];
+  }
 }
