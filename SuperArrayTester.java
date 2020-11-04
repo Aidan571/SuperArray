@@ -24,5 +24,6 @@ public class SuperArrayTester{
     System.out.println(sa1.toString());
     System.out.println(sa1.contains("Hello"));
     System.out.println(sa1.contains("What's Up"));
+    SuperArray sa2 = new SuperArray(20);
   }
 }
