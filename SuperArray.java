@@ -4,7 +4,7 @@ public class SuperArray{
 
   public SuperArray(){
     size = 0;
-    data = new String [2];
+    data = new String [10];
   }
 
   public int size(){
@@ -45,5 +45,17 @@ public class SuperArray{
       bigger[i] = data[i];
     }
     data = bigger;
+  }
+
+  public boolean isEmpty(){
+    if(size == 0){
+      return true;
+    }
+    else
+      return false;
+  }
+
+  public void clear(){
+    size = 0;
   }
 }
