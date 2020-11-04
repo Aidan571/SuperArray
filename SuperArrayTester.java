@@ -1,4 +1,18 @@
 public class SuperArrayTester{
+  public static String arrToString(String[] arr){
+  String result = "{";
+  if(arr.length == 0){
+      return "{}";
+    }
+  for(int i = 0; i < arr.length; i++){
+    if(i == arr.length-1){
+      result = result + arr[i] + "}";
+    }
+    else
+    result = result + arr[i] + ", ";
+  }
+  return result;
+  }
   public static void main(String[]args){
     SuperArray sa1 = new SuperArray();
     System.out.println(sa1.size());
@@ -39,5 +53,7 @@ public class SuperArrayTester{
     System.out.println(sa2.size());
     System.out.println(sa2.indexOf("Hi"));
     System.out.println(sa2.indexOf("Not Present"));
+    String[] a1 = sa2.toArray();
+    System.out.println(arrToString(a1));
   }
 }
