@@ -22,5 +22,7 @@ public class SuperArrayTester{
     sa1.add("Hey There");
     sa1.add("Hi");
     System.out.println(sa1.toString());
+    System.out.println(sa1.contains("Hello"));
+    System.out.println(sa1.contains("What's Up"));
   }
 }
