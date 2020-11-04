@@ -11,18 +11,6 @@ public class SuperArray{
     return size;
   }
 
-  public boolean add(String element){
-    if(this.size() < data.length){
-      data[this.size()] = element;
-      size += 1;
-      return true;
-    }
-    this.resize();
-    data[this.size()] = element;
-    size += 1;
-    return true;
-  }
-
   public String get(int index){
     if(index >= 0 && index <= (this.size() - 1)){
       return data[index];
@@ -45,6 +33,18 @@ public class SuperArray{
       bigger[i] = data[i];
     }
     data = bigger;
+  }
+
+  public boolean add(String element){
+    if(this.size() < data.length){
+      data[this.size()] = element;
+      size += 1;
+      return true;
+    }
+    this.resize();
+    data[this.size()] = element;
+    size += 1;
+    return true;
   }
 
   public boolean isEmpty(){
