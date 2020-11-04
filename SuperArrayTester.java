@@ -37,5 +37,7 @@ public class SuperArrayTester{
     System.out.println(sa2.remove(2));
     System.out.println(sa2.toString());
     System.out.println(sa2.size());
+    System.out.println(sa2.indexOf("Hi"));
+    System.out.println(sa2.indexOf("Not Present"));
   }
 }
