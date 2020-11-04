@@ -18,5 +18,9 @@ public class SuperArrayTester{
     System.out.println(sa1.isEmpty());
     sa1.clear();
     System.out.println(sa1.isEmpty());
+    sa1.add("Hello");
+    sa1.add("Hey There");
+    sa1.add("Hi");
+    System.out.println(sa1.toString());
   }
 }
