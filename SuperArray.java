@@ -58,4 +58,12 @@ public class SuperArray{
   public void clear(){
     size = 0;
   }
+
+  public String toString(){
+    String result = "[";
+    for(int i = 0; i < size - 1; i++){
+      result = result + data[i] + ", ";
+    }
+    return result + data[size - 1] + "]";
+  }
 }
