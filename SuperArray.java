@@ -130,4 +130,20 @@ public class SuperArray{
     }
     return -1;
   }
+
+  public boolean equals(SuperArray other){
+    int size;
+    if(other.size() > this.size()){
+      size = this.size();
+    }
+    else
+    size = other.size();
+    for(int i = 0; i < size; i++){
+      if(this.get(i).equals(other.get(i))){
+      }
+      else
+      return false;
+    }
+    return true;
+  }
 }
