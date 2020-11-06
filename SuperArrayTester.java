@@ -58,5 +58,8 @@ public class SuperArrayTester{
     sa2.add("Hi");
     System.out.println(sa2.lastIndexOf("Hi"));
     System.out.println(sa2.lastIndexOf("Bonjour"));
+    System.out.println(sa1.equals(sa2));
+    SuperArray sa3 = sa1;
+    System.out.println(sa1.equals(sa3));
   }
 }
