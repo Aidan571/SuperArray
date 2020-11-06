@@ -9,7 +9,7 @@ public class Demo{
     }
   }
 
-  public static SuperArray findOverLap(SuperArray a, SuperArray b){
+  public static SuperArray findOverlap(SuperArray a, SuperArray b){
     SuperArray result = new SuperArray();
     removeDuplicates(a);
     removeDuplicates(b);
@@ -55,6 +55,6 @@ public class Demo{
     sa2.add("2");
     sa2.add("2");
     sa2.add("9");
-    System.out.println(findOverLap(sa1,sa2).toString());
+    System.out.println(findOverlap(sa1,sa2).toString());
     }
 }
