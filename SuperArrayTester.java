@@ -55,5 +55,8 @@ public class SuperArrayTester{
     System.out.println(sa2.indexOf("Not Present"));
     String[] a1 = sa2.toArray();
     System.out.println(arrToString(a1));
+    sa2.add("Hi");
+    System.out.println(sa2.lastIndexOf("Hi"));
+    System.out.println(sa2.lastIndexOf("Bonjour"));
   }
 }
