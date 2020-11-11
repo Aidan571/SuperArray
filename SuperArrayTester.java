@@ -38,7 +38,7 @@ public class SuperArrayTester{
     System.out.println(sa1.toString());
     System.out.println(sa1.contains("Hello"));
     System.out.println(sa1.contains("What's Up"));
-    SuperArray sa2 = new SuperArray(5);
+    SuperArray sa2 = new SuperArray(3);
     sa2.add("Hello");
     sa2.add("Hi");
     sa2.add("Hey There");
@@ -61,5 +61,10 @@ public class SuperArrayTester{
     System.out.println(sa1.equals(sa2));
     SuperArray sa3 = sa1;
     System.out.println(sa1.equals(sa3));
+    try{
+      SuperArray crasher = new SuperArray(-2);
+    }catch (IllegalArgumentException e){
+      System.out.println("Initial Capacity can't be negative.");
+    }
   }
 }
