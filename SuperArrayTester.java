@@ -18,7 +18,6 @@ public class SuperArrayTester{
     System.out.println(sa1.size());
     System.out.println(sa1.add("Hello"));
     System.out.println(sa1.get(0));
-    System.out.println(sa1.get(1));
     System.out.println(sa1.set(0,"Hey There"));
     System.out.println(sa1.get(0));
     SuperArray words = new SuperArray();
@@ -66,5 +65,15 @@ public class SuperArrayTester{
     }catch (IllegalArgumentException e){
       System.out.println("Initial Capacity can't be negative.");
     }
+      try{
+        sa1.get(-10);
+      }catch (IndexOutOfBoundsException e){
+        System.out.println("Index can't be negative");
+      }
+      try{
+        sa1.get(100);
+      }catch (IndexOutOfBoundsException e){
+        System.out.println("Index can't be larger than size of the superarray");
+      }
   }
 }
