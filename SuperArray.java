@@ -12,10 +12,13 @@ public class SuperArray{
   }
 
   public String get(int index){
-    if(index >= 0 && index <= (this.size() - 1)){
-      return data[index];
+    if(index < 0){
+      throw new IndexOutOfBoundsException("Index " + index + " can not be negative");
     }
-    return "No value at the given index.";
+    else if(index >= this.size()){
+      throw new IndexOutOfBoundsException("Index " + index + " can not be larger than the size of the superarray");
+    }
+    return data[index];
   }
 
   public String set(int index, String element){
