@@ -95,5 +95,15 @@ public class SuperArrayTester{
       }catch (IndexOutOfBoundsException e){
         System.out.println("Index can't be larger than size of the superarray");
       }
+      try{
+        sa1.remove(-10);
+      }catch (IndexOutOfBoundsException e){
+        System.out.println("Index can't be negative");
+      }
+      try{
+        sa1.remove(100);
+      }catch (IndexOutOfBoundsException e){
+        System.out.println("Index can't be larger than size of the superarray");
+      }
   }
 }
