@@ -108,6 +108,12 @@ public class SuperArray{
   }
 
   public String remove(int index){
+    if(index < 0){
+      throw new IndexOutOfBoundsException("Index " + index + " can not be negative");
+    }
+    else if(index >= this.size()){
+      throw new IndexOutOfBoundsException("Index " + index + " can not be larger than the size of the superarray");
+    }
     String holder = data[size - 1];
     String holder2;
     String returnValue = data[index];
