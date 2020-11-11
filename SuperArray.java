@@ -22,12 +22,15 @@ public class SuperArray{
   }
 
   public String set(int index, String element){
-    if(index >= 0 && index <= (this.size() - 1)){
-      String holder = this.get(index);
-      data[index] = element;
-      return holder;
+    if(index < 0){
+      throw new IndexOutOfBoundsException("Index " + index + " can not be negative");
     }
-    return "No value at the given index.";
+    else if(index >= this.size()){
+      throw new IndexOutOfBoundsException("Index " + index + " can not be larger than the size of the superarray");
+    }
+    String holder = this.get(index);
+    data[index] = element;
+    return holder;
   }
 
   private void resize(){
