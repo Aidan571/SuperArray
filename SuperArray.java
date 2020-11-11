@@ -28,7 +28,7 @@ public class SuperArray{
   }
 
   private void resize(){
-    String [] bigger = new String [data.length * 2];
+    String [] bigger = new String [(data.length + 1) * 2];
     for(int i = 0; i < data.length; i++){
       bigger[i] = data[i];
     }
@@ -76,6 +76,9 @@ public class SuperArray{
   }
 
   public SuperArray(int initialCapacity){
+    if(initialCapacity < 0){
+      throw new IllegalArgumentException("InitialCapacity " + initialCapacity + " cannot be negative");
+    }
     size = 0;
     data = new String[initialCapacity];
   }
