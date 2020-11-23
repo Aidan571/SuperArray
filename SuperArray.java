@@ -96,6 +96,10 @@ public class SuperArray{
     else if(index > this.size()){
       throw new IndexOutOfBoundsException("Index " + index + " can not be larger than the size of the superarray");
     }
+    if(index == size){
+      this.add(element);
+    }
+    else
     this.add(data[size - 1]);
     String holder = data[index];
     String holder2;
